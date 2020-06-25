@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="principal">
+                <label for="deposit">Principal</label>
+                <br>
+                <input type="number" id="deposit" placeholder="Enter the money/principal">
+            </div>
+            <div class="interestRate">
+                <label for="interest">Interest Rate </label>
+                <br>
+                <input type="number" id="interest" placeholder="Enter the interest Rate in %">
+            </div>
+            <div class="period">
+                <label for="years">Years</label>
+                <br>
+                <input type="number" id="years" placeholder="Enter Years">
+            </div>
+            <div class="select">
+                <label for="select">Type of Interest</label>
+                <br>
+                <select name="type" id="select">
+                    <option value="simpleInterest">Simple</option>
+                    <option value="CompoundInterest" selected>Compound</option>
+                </select>
+            </div>
+            <div class="compoundSection">
+                <label for="compoundSelect">compound Interval</label>
+                <br>
+                <select name="type" id="compoundSelect">
+                    <option value="Annual">Annual</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Daily">Daily</option>
+                </select>       
+            </div>
+            <button class="submit">Submit</button>
+        </div>
+
+
+    
+      
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
